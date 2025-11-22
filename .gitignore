@@ -7,7 +7,12 @@ node_modules/
 dist/
 dist-electron/
 release/
-build/
+
+# Keep build config directory but ignore its outputs
+!build/
+build/*.app
+build/*.exe
+build/*.dmg
 
 # Testing
 coverage/
